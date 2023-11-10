@@ -1,41 +1,40 @@
 # Laravel AdminLTE
 
-This is a ready to use AdminLTE template for Laravel 5.8
+Ini template AdminLTE siap pakai buat Laravel 5.8
 
-## What's Inside
+## Apa Isinya?
 
 1. AdminLTE v3.0.0-beta
 
-    Only /dist folder is included. You can find the templates in view/layouts and view/auth.
+    Hanya folder /dist yang dimasukkin. Kamu bisa nemuin template-nya di view/layouts dan view/auth..
 
 2. Laravel 5.8
 
-    Default from laravel, with changes:
+    Bawaan dari Laravel, dengan perubahan:
 
-    - route /starter -> to preview how the dashboard looks like (disable it when in productions)
-    - disabled Auth route /verify & /reset and no blade template applied for them
-    - change /home to /dashboard (the controller too)
+    - Rute ```/starter```-> buat liat gimana dashboard-nya kelihatan (matiin kalo udah produksi)
+    - Matiin rute ```Auth``` ```/verify``` & ```/reset``` dan gak ada template blade buat itu
 
 ## Setup
 
 ### 1. Clone Project
 
-#### Using Git
+#### Menggunakan Git
 
-You can clone this repository & rename it to your project
+Kamu bisa clone repository ini & ganti nama sesuai projek kamu
 
 ````
 git clone https://github.com/rpahlevy/laravel-adminlte3 your-project-name
 ````
 
-#### Without Git
+#### Tanpa Git
 
-Click that green button on right top corner (Clone or download) -> Download ZIP
-Extract it and rename to your project name
+Klik tombol ijo di pojok kanan atas (Clone or download) -> **Download ZIP**.
+Ekstrak dan ganti nama jadi nama proyek lo
 
 ### 2. Install Dependencies
 
-Change composer.json to your liking first (detail of your project). Make sure you have composer installed, then cd to the project folder and do the following
+Ubah composer.json sesuai keinginan lo dulu (detail proyek lo). Pastikan lo udah install composer, terus cd ke folder proyek dan lakuin hal berikut
 
 ````
 composer install
@@ -43,9 +42,9 @@ composer install
 
 ### 3. Setup .env
 
-Clone .env.example or just rename it to .env then fill in the details & don't forget to setup your DB.
+Clone ``.env.example`` atau cukup ganti nama jadi .env terus isi detailnya & jangan lupa setup DB lo.
 
-Then generate app key by running:
+Terus generate app key dengan jalanin:
 
 ````
 php artisan key:generate
@@ -53,18 +52,17 @@ php artisan key:generate
 
 ### 4. Migrate DB
 
-If your web needs Auth (who don't?) migrate the default DB from Laravel. Still on the project, run:
+Kalau web lo butuh Auth (siapa sih yang nggak?) migrate DB default dari Laravel. Masih di proyek, jalanin:
 
 ````
 php artisan migrate
 ````
 
-### 5. Serve Your Web
+### 5. Serve Web Kamu
 
-Serve locally using php built in and visit localhost:8000/starter
+Serve secara lokal pake php built in dan kunjungi localhost:8000/starter
 
 ````
 php artisan serve
 ````
-
-To get into the dashboard go to /register first.
+Untuk masuk ke dashboard, ke /register dulu.
